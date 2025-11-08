@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,13 +16,15 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-red-600 to-yellow-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">F</span>
-              </div>
-              <span className="text-2xl font-bold text-gray-900">
-                Fast Marketing
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="./logos/FaastMarketinglogo.jpeg"
+                alt="Fast Marketing Logo"
+                width={680}
+                height={380}
+                className="h-24 sm:h-20 md:h-24 lg:h-28 w-auto"
+                priority
+              />
             </Link>
           </div>
 

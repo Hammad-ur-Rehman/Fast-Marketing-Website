@@ -201,7 +201,7 @@ export default function About() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Haseeb Muzammil Khan</h3>
               <p className="text-red-600 font-semibold mb-3">CEO</p>
               <p className="text-gray-600">
-                With over 7 years of experience in marketing, Haseeb leads our team with vision and passion.
+              With over 30 years of experience in marketing, Haseeb leads our team with vision and passion.
               </p>
             </div>
 
@@ -212,7 +212,7 @@ export default function About() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Muhammad</h3>
               <p className="text-red-600 font-semibold mb-3">Balochistan Local Market Manager</p>
               <p className="text-gray-600">
-                Muhammad covers Balochistan local market with extensive knowledge of the region.
+              Mohabbat Khan covers Balochistan local market with extensive knowledge of the region.
               </p>
             </div>
 
@@ -221,9 +221,9 @@ export default function About() {
                 <span className="text-white font-bold text-2xl">I</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Imran</h3>
-              <p className="text-red-600 font-semibold mb-3">Balochistan Local Market Manager</p>
+              <p className="text-red-600 font-semibold mb-3">Hyderabad Local Market Manager</p>
               <p className="text-gray-600">
-                Imran also covers Balochistan local market, ensuring comprehensive coverage of the region.
+              Imran manages the Hyderabad local market, ensuring comprehensive regional coverage.
               </p>
             </div>
 
@@ -243,9 +243,9 @@ export default function About() {
                 <span className="text-white font-bold text-2xl">A</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Adil</h3>
-              <p className="text-red-600 font-semibold mb-3">Orangi Karachi Market Manager</p>
+              <p className="text-red-600 font-semibold mb-3">Orangi Town Karachi Market Manager</p>
               <p className="text-gray-600">
-                Adil covers Orangi Karachi local market, ensuring strong presence in the city.
+                Adil covers Orangi town local market, ensuring strong presence in the orangi town.
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -26,8 +27,28 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // EmailJS configuration - Replace with your actual values
+      const serviceId = 'YOUR_SERVICE_ID'; // Get from EmailJS dashboard
+      const templateId = 'YOUR_TEMPLATE_ID'; // Get from EmailJS dashboard
+      const publicKey = 'YOUR_PUBLIC_KEY'; // Get from EmailJS dashboard
+      
+      // Send email using EmailJS
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          service: formData.service,
+          message: formData.message,
+          to_email: 'info@fastmarketing.pk', // Your business email
+        },
+        publicKey
+      );
+      
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({
@@ -38,7 +59,11 @@ export default function Contact() {
         service: '',
         message: ''
       });
-    }, 2000);
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+    }
   };
 
   return (
@@ -68,6 +93,12 @@ export default function Contact() {
               {submitStatus === 'success' && (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
                   Thank you for your message! We'll get back to you within 24 hours.
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+                  Sorry, there was an error sending your message. Please try again or contact us directly.
                 </div>
               )}
 
@@ -149,7 +180,7 @@ export default function Contact() {
                   >
                     <option value="">Select a service</option>
                     <option value="local-distribution">Local Market Distribution</option>
-                    <option value="digital-marketing">Digital Marketing</option>
+                    {/* <option value="digital-marketing">Digital Marketing</option> */}
                     <option value="brand-promotion">Brand Promotion</option>
                     <option value="market-research">Market Research</option>
                     <option value="product-launch">Product Launch</option>
@@ -229,9 +260,9 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Office Address</h3>
                     <p className="text-gray-600">
-                      Suite 101, Business Plaza<br />
-                      Main Boulevard, Gulberg<br />
-                      Lahore, Punjab 54000<br />
+                      
+                      North Nazimabad Karachi<br />
+                      Karachi, Sindh <br />
                       Pakistan
                     </p>
                   </div>
@@ -277,7 +308,7 @@ export default function Contact() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Interactive Map</h3>
                 <p className="text-gray-600">
-                  Suite 101, Business Plaza, Main Boulevard, Gulberg, Lahore
+                North Nazimabad Karachi, Sindh Pakistan
                 </p>
                 <p className="text-sm text-gray-500 mt-2">
                   Click to open in Google Maps

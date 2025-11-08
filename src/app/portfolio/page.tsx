@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Portfolio() {
   const caseStudies = [
@@ -10,17 +11,17 @@ export default function Portfolio() {
       description: "Expanded Nimco distribution across 25+ cities in Pakistan, increasing sales by 300% in 6 months.",
       results: ["300% sales increase", "25+ cities covered", "500+ new retailers", "6 months timeline"],
       image: "bg-gradient-to-br from-red-100 to-red-200",
-      icon: "🍟"
+      logo: "/logos/GulzarFoods.jpg"
     },
     {
       id: 2,
-      title: "Lassani Foods Digital Campaign",
+      title: "Lassani Foods Market Expansion",
       client: "Lassani Foods",
-      category: "Digital Marketing",
-      description: "Comprehensive digital marketing strategy that increased online engagement by 400% and lead generation by 250%.",
-      results: ["400% engagement increase", "250% lead generation", "50% cost reduction", "12 months campaign"],
+      category: "Local Distribution",
+      description: "Comprehensive local market expansion strategy that increased market coverage by 400% and sales by 250%.",
+      results: ["400% market coverage increase", "250% sales growth", "50% cost reduction", "12 months campaign"],
       image: "bg-gradient-to-br from-yellow-100 to-yellow-200",
-      icon: "📱"
+      logo: "/logos/Lasanifoods.webp"
     },
     {
       id: 3,
@@ -30,17 +31,17 @@ export default function Portfolio() {
       description: "Successful product launch across multiple cities with strategic marketing and distribution planning.",
       results: ["100% launch success", "15 cities covered", "200% target sales", "3 months campaign"],
       image: "bg-gradient-to-br from-blue-100 to-blue-200",
-      icon: "🚀"
+      logo: "/logos/JannatFoods.jpg"
     },
     {
       id: 4,
-      title: "Uptime Foods SEO Optimization",
+      title: "Uptime Foods Regional Expansion",
       client: "Uptime Foods",
-      category: "Digital Marketing",
-      description: "SEO optimization that improved search rankings and increased organic traffic by 350%.",
-      results: ["350% traffic increase", "Top 3 rankings", "200% conversion rate", "8 months project"],
+      category: "Local Distribution",
+      description: "Regional market expansion that improved market penetration and increased distribution coverage by 350%.",
+      results: ["350% coverage increase", "Top 3 market positions", "200% sales growth", "8 months project"],
       image: "bg-gradient-to-br from-green-100 to-green-200",
-      icon: "🔍"
+      logo: "/logos/Uptimesnacks.jpg"
     },
     {
       id: 5,
@@ -50,17 +51,17 @@ export default function Portfolio() {
       description: "Penetrated new markets with strategic distribution and marketing approach, achieving 150% growth.",
       results: ["150% market growth", "30+ new markets", "400+ retail partners", "10 months project"],
       image: "bg-gradient-to-br from-purple-100 to-purple-200",
-      icon: "🏪"
+      logo: "/logos/ZKF Crunch.png"
     },
     {
       id: 6,
-      title: "Hira Foods Brand Building",
-      client: "Hira Foods",
+      title: "Food Land Brand Building",
+      client: "Food Land",
       category: "Digital Marketing",
       description: "Built strong social media presence and brand awareness through strategic content and engagement.",
       results: ["500% follower growth", "80% engagement rate", "Brand recognition", "6 months campaign"],
       image: "bg-gradient-to-br from-pink-100 to-pink-200",
-      icon: "📸"
+      logo: "/logos/FoodLand.jpg"
     }
   ];
 
@@ -101,6 +102,100 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Client Logos Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Trusted Clients
+            </h2>
+            <p className="text-xl text-gray-600">
+              We're proud to work with leading brands across Pakistan
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
+            {/* Gulzar Foods */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+              <Image
+                src="./logos/GulzarFoods.jpg"
+                alt="Gulzar Foods Logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+            {/* Lassani Foods */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+              <Image
+                src="./logos/JannatFoods.jpg"
+                alt="jannat logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+            {/* Jannat Foods */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+              <Image
+                src="./logos/Lasanifoods.webp"
+                alt="Uptime Snacks Logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+            {/* KFO Khan */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+              <Image
+                src="./logos/KFOKhan.jpg"
+                alt="KFO Khan Logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+            {/* Uptime Snacks */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+              <Image
+                src="/Logos/Uptimesnacks.jpg"
+                alt="./logos/Uptime Snacks Logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+            {/* ZKF Crunch */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+              <Image
+                src="/Logos/ZKF Crunch.png"
+                alt="ZKF Crunch Logo"
+                width={100}
+                height={120}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+            {/* Food Land */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+              <Image
+                src="./logos/FoodLand.jpg"
+                alt="Food Land Logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Case Studies */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -116,8 +211,16 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((study) => (
               <div key={study.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className={`h-48 ${study.image} flex items-center justify-center`}>
-                  <div className="text-6xl">{study.icon}</div>
+                <div className="h-48 bg-white flex items-center justify-center p-6 border-b border-gray-100">
+                  <div className="rounded-lg p-4 w-full h-full flex items-center justify-center">
+                    <Image
+                      src={study.logo}
+                      alt={`${study.client} Logo`}
+                      width={160}
+                      height={100}
+                      className="w-32 h-auto object-contain max-h-32"
+                    />
+                  </div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
@@ -160,8 +263,14 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
-                  G
+                <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
+                  <Image
+                    src="/Logos/GulzarFoods.jpg"
+                    alt="Gulzar Foods Logo"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="ml-4">
                   <h4 className="font-semibold text-gray-900">Gulzar Foods Nimco</h4>
@@ -183,8 +292,14 @@ export default function Portfolio() {
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
-                  L
+                <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
+                  <Image
+                    src="/logos/Lasanifoods.webp"
+                    alt="Lassani Foods Logo"
+                    width={54}
+                    height={60}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="ml-4">
                   <h4 className="font-semibold text-gray-900">Lassani Foods</h4>
@@ -206,8 +321,14 @@ export default function Portfolio() {
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
-                  A
+                <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
+                  <Image
+                    src="/Logos/JannatFoods.jpg"
+                    alt="Jannat Foods Logo"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="ml-4">
                   <h4 className="font-semibold text-gray-900">Al Jannat Foods</h4>
@@ -230,7 +351,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Industries We Serve */}
+      {/* Industries We Serve
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -247,15 +368,8 @@ export default function Portfolio() {
               { name: "FMCG", icon: "🛒" },
               { name: "Food & Beverage", icon: "🍔" },
               { name: "Retail", icon: "🏪" },
-              { name: "E-commerce", icon: "💻" },
-              { name: "Healthcare", icon: "🏥" },
               { name: "Technology", icon: "📱" },
-              { name: "Fashion", icon: "👗" },
-              { name: "Automotive", icon: "🚗" },
-              { name: "Real Estate", icon: "🏠" },
-              { name: "Education", icon: "📚" },
-              { name: "Banking", icon: "🏦" },
-              { name: "Manufacturing", icon: "🏭" }
+              
             ].map((industry, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -266,7 +380,7 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-red-600 to-yellow-500">

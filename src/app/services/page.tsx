@@ -11,14 +11,13 @@ export default function Services() {
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Services</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive marketing solutions designed to help your business reach every corner of Pakistan
+              Comprehensive local distribution solutions designed to help your business reach every corner of Pakistan
             </p>
           </div>
         </div>
       </section>
 
       {/* Main Services */}
-      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
             {/* Local Market Distribution */}
@@ -75,57 +74,51 @@ export default function Services() {
               </Link>
             </div>
 
-            {/* Digital Marketing */}
-            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl shadow-lg">
+            {/* Brand Promotion */}
+            <div className="bg-gradient-to-br from-red-50 to-yellow-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center mr-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-red-600 to-yellow-500 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
                   </svg>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">Digital Marketing</h2>
+                <h2 className="text-3xl font-bold text-gray-900">Brand Promotion</h2>
               </div>
               <p className="text-gray-600 mb-6 text-lg">
-                Boost your online presence with our comprehensive digital marketing services. 
-                From social media to SEO, we help you connect with your digital audience.
+                Build a strong brand presence in local markets with our comprehensive promotion strategies. 
+                We help create memorable campaigns that resonate with local communities across Pakistan.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center text-gray-700">
                   <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Social media marketing & management
+                  Local market brand awareness
                 </li>
                 <li className="flex items-center text-gray-700">
                   <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Search engine optimization (SEO)
+                  Product launch campaigns
                 </li>
                 <li className="flex items-center text-gray-700">
                   <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Google Ads & Facebook Ads
+                  Local event marketing
                 </li>
                 <li className="flex items-center text-gray-700">
                   <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Content marketing & creation
-                </li>
-                <li className="flex items-center text-gray-700">
-                  <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Email marketing campaigns
+                  Retailer relationship building
                 </li>
               </ul>
               <Link 
                 href="/contact" 
-                className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all duration-200 inline-block"
+                className="bg-gradient-to-r from-red-600 to-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-red-700 hover:to-yellow-600 transition-all duration-200 inline-block"
               >
-                Start Digital Campaign
+                Get Promotion Quote
               </Link>
             </div>
           </div>
@@ -141,13 +134,13 @@ export default function Services() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Brand Promotion</h3>
               <p className="text-gray-600 mb-4">
-                Build a strong brand presence with our comprehensive promotion strategies and memorable campaigns.
+                Build a strong brand presence in local markets with our comprehensive promotion strategies and memorable campaigns.
               </p>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Brand awareness campaigns</li>
-                <li>• Product launches</li>
-                <li>• Event marketing</li>
-                <li>• Public relations</li>
+                <li>• Local brand awareness campaigns</li>
+                <li>• Product launch events</li>
+                <li>• Local event marketing</li>
+                <li>• Retailer relationship building</li>
               </ul>
             </div>
 
@@ -160,13 +153,13 @@ export default function Services() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Market Research</h3>
               <p className="text-gray-600 mb-4">
-                Get valuable insights about your target market with our comprehensive research services.
+                Get valuable insights about local markets across Pakistan with our comprehensive research services.
               </p>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Consumer behavior analysis</li>
-                <li>• Market trend analysis</li>
-                <li>• Competitor research</li>
-                <li>• Customer surveys</li>
+                <li>• Local consumer behavior analysis</li>
+                <li>• Regional market trend analysis</li>
+                <li>• Local competitor research</li>
+                <li>• Retailer feedback surveys</li>
               </ul>
             </div>
 
@@ -190,7 +183,6 @@ export default function Services() {
             </div>
           </div>
         </div>
-      </section>
 
       {/* Process Section */}
       <section className="py-20 bg-gray-50">

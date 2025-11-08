@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  // output: 'export', // Commented out for development
+  // trailingSlash: true, // Commented out for development
+  images: {
+    unoptimized: true
+  }
 }
 
 module.exports = nextConfig
