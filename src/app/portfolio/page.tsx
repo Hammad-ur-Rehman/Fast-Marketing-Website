@@ -162,7 +162,7 @@ export default function Portfolio() {
             {/* Uptime Snacks */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
               <Image
-                src="/Logos/Uptimesnacks.jpg"
+                src="/logos/Uptimesnacks.jpg"
                 alt="./logos/Uptime Snacks Logo"
                 width={200}
                 height={120}
@@ -173,7 +173,7 @@ export default function Portfolio() {
             {/* ZKF Crunch */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
               <Image
-                src="/Logos/ZKF Crunch.png"
+                src="/logos/ZKF Crunch.png"
                 alt="ZKF Crunch Logo"
                 width={100}
                 height={120}
