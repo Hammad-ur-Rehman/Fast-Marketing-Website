@@ -74,7 +74,7 @@ export default function KorangiTeam() {
               <h3 className="text-3xl font-bold text-gray-900 mb-3">Irfan</h3>
               <p className="text-red-600 font-semibold text-xl mb-6">Korangi Town Karachi Market Manager</p>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
-              Irfan covers the Korangi Town market, ensuring a strong presence across the Korangi area. His strategic approach and deep market knowledge have helped establish a robust distribution network and strengthen brand presence in one of Karachi's key industrial and commercial zones.
+              Irfan covers the Korangi Town market, ensuring a strong presence across the Korangi area. His strategic approach and deep market knowledge have helped establish a robust distribution network and strengthen brand presence in one of Karachi&apos;s key industrial and commercial zones.
               </p>
               <div className="mt-10 pt-10 border-t border-gray-200">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

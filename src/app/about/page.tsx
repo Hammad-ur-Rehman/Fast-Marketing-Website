@@ -28,17 +28,17 @@ export default function About() {
               <p className="text-lg text-gray-600 mb-6">
                 Faast Marketing was founded in 2017 with a simple yet powerful vision: to help businesses 
                 across Pakistan reach their full potential through innovative marketing solutions. 
-                What started as a small team with big dreams has grown into one of Pakistan's 
+                What started as a small team with big dreams has grown into one of Pakistan&apos;s 
                 leading marketing agencies.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Over the years, we've built an extensive network of distributors, retailers, 
+                Over the years, we&apos;ve built an extensive network of distributors, retailers, 
                 and marketing professionals who share our commitment to excellence. From 
-                market distribution to cutting-edge digital marketing, we've helped hundreds 
+                market distribution to cutting-edge digital marketing, we&apos;ve helped hundreds 
                 of businesses grow and succeed across Pakistan.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Today, we're proud to serve clients across all major cities in Pakistan, 
+                Today, we&apos;re proud to serve clients across all major cities in Pakistan, 
                 from Karachi to Islamabad, Lahore to Peshawar, and everywhere in between. 
                 Our success is measured not just by our growth, but by the success of our clients.
               </p>
@@ -108,7 +108,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-600 text-lg">
-                To become Pakistan's most trusted and innovative marketing partner, known for delivering 
+                To become Pakistan&apos;s most trusted and innovative marketing partner, known for delivering 
                 exceptional results and transforming businesses through strategic marketing excellence. 
                 We envision a future where every Pakistani business can compete globally.
               </p>
@@ -150,7 +150,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Passion</h3>
               <p className="text-gray-600">
-                We're passionate about marketing and helping businesses achieve their goals.
+                We&apos;re passionate about marketing and helping businesses achieve their goals.
               </p>
             </div>
 
@@ -376,7 +376,7 @@ export default function About() {
             Ready to Work With Us?
           </h2>
           <p className="text-xl text-white opacity-90 mb-8">
-            Let's discuss how we can help your business achieve its marketing goals
+            Let&apos;s discuss how we can help your business achieve its marketing goals
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 

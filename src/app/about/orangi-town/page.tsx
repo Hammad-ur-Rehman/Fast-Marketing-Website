@@ -88,7 +88,7 @@ export default function OrangiTownTeam() {
               <h3 className="text-3xl font-bold text-gray-900 mb-3">Syed Adil Ali</h3>
               <p className="text-red-600 font-semibold text-xl mb-6">Orangi Town Karachi Market Manager</p>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
-                Adil covers Orangi town market, ensuring strong presence in the Orangi town area. His strategic approach and market knowledge have helped establish a robust distribution network and strong brand presence in one of Karachi's key commercial areas.
+                Adil covers Orangi town market, ensuring strong presence in the Orangi town area. His strategic approach and market knowledge have helped establish a robust distribution network and strong brand presence in one of Karachi&apos;s key commercial areas.
               </p>
               <div className="mt-10 pt-10 border-t border-gray-200">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

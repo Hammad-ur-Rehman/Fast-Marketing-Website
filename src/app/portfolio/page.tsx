@@ -144,7 +144,7 @@ export default function Portfolio() {
                 Expanding <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Globally</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                With proven success in Pakistan, we're ready to help international businesses enter new markets and scale globally
+                With proven success in Pakistan, we&apos;re ready to help international businesses enter new markets and scale globally
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -305,8 +305,8 @@ export default function Portfolio() {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-4">
-                "Fast Marketing transformed our distribution network. We went from 5 cities to 25+ cities in just 6 months. 
-                Their local market expertise is unmatched in Pakistan."
+                &quot;Fast Marketing transformed our distribution network. We went from 5 cities to 25+ cities in just 6 months. 
+                Their local market expertise is unmatched in Pakistan.&quot;
               </p>
               <div className="flex text-yellow-500">
                 {[...Array(5)].map((_, i) => (
@@ -334,8 +334,8 @@ export default function Portfolio() {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-6 leading-relaxed text-base">
-                "Their digital marketing strategies are phenomenal. We saw a 400% increase in online engagement 
-                and 250% more leads. The ROI has been incredible."
+                &quot;Their digital marketing strategies are phenomenal. We saw a 400% increase in online engagement 
+                and 250% more leads. The ROI has been incredible.&quot;
               </p>
               <div className="flex text-yellow-500">
                 {[...Array(5)].map((_, i) => (
@@ -363,8 +363,8 @@ export default function Portfolio() {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-4">
-                "The team's understanding of local markets is incredible. They helped us launch our new product 
-                line successfully across multiple cities. Highly professional and results-driven."
+                &quot;The team&apos;s understanding of local markets is incredible. They helped us launch our new product 
+                line successfully across multiple cities. Highly professional and results-driven.&quot;
               </p>
               <div className="flex text-yellow-500">
                 {[...Array(5)].map((_, i) => (
@@ -420,7 +420,7 @@ export default function Portfolio() {
             Ready to Be Our Next Success Story?
           </h2>
           <p className="text-xl md:text-2xl text-white opacity-95 mb-10 leading-relaxed">
-            Whether you're in Pakistan or planning international expansion, let's discuss how we can help your business achieve remarkable growth
+            Whether you&apos;re in Pakistan or planning international expansion, let&apos;s discuss how we can help your business achieve remarkable growth
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 

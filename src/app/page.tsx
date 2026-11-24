@@ -84,7 +84,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Faast Marketing
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">
-                  Pakistan's Leading
+                  Pakistan&apos;s Leading
                 </span>
                 <span className="block">Marketing Network</span>
               </h1>
@@ -255,7 +255,7 @@ export default function Home() {
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-600">
-              Don't just take our word for it - hear from our satisfied clients
+              Don&apos;t just take our word for it - hear from our satisfied clients
             </p>
           </div>
 
@@ -284,7 +284,7 @@ export default function Home() {
                         <h4 className="text-xl font-bold text-gray-900 mb-2">{testimonial.name}</h4>
                         <p className="text-gray-600 text-sm mb-6">{testimonial.company}</p>
                         <p className="text-gray-600 italic text-lg leading-relaxed">
-                          "{testimonial.quote}"
+                          &quot;{testimonial.quote}&quot;
                         </p>
                         <div className="flex justify-center mt-6">
                           <div className="flex text-yellow-500">

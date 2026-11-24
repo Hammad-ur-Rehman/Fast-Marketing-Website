@@ -76,7 +76,7 @@ export default function Contact() {
               Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to grow your business? Let's discuss how we can help you reach your marketing goals.
+              Ready to grow your business? Let&apos;s discuss how we can help you reach your marketing goals.
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function Contact() {
               
               {submitStatus === 'success' && (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
-                  Thank you for your message! We'll get back to you within 24 hours.
+                  Thank you for your message! We&apos;ll get back to you within 24 hours.
                 </div>
               )}
               
@@ -219,7 +219,7 @@ export default function Contact() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
                 <p className="text-gray-600 mb-8">
-                  Get in touch with us through any of the following channels. We're here to help you succeed.
+                  Get in touch with us through any of the following channels. We&apos;re here to help you succeed.
                 </p>
               </div>
 
@@ -294,7 +294,7 @@ export default function Contact() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us</h2>
             <p className="text-xl text-gray-600">
-              Visit our office in the heart of Lahore's business district
+              Visit our office in the heart of Lahore&apos;s business district
             </p>
           </div>
           

@@ -91,7 +91,7 @@ export default function CentralTeam() {
                 Central Karachi Market Manager
               </p>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
-                Safdar covers the Central Karachi market, ensuring a strong presence across key commercial areas. His strategic approach and deep market knowledge have helped establish a robust distribution network and strengthen brand presence in one of Karachi's most active business zones.
+                Safdar covers the Central Karachi market, ensuring a strong presence across key commercial areas. His strategic approach and deep market knowledge have helped establish a robust distribution network and strengthen brand presence in one of Karachi&apos;s most active business zones.
               </p>
               <div className="mt-10 pt-10 border-t border-gray-200">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

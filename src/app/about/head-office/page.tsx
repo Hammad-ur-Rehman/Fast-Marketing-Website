@@ -152,7 +152,7 @@ export default function HeadOfficeTeam() {
             Want to Join Our Team?
           </h2>
           <p className="text-xl text-white opacity-95 mb-10 leading-relaxed">
-            We're always looking for talented individuals to join our growing team
+            We&apos;re always looking for talented individuals to join our growing team
           </p>
           <Link 
             href="/contact" 
