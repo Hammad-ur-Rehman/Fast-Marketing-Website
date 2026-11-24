@@ -49,6 +49,13 @@ export default function Home() {
       company: "Food Distribution",
       image: "/logos/KFOKhan.jpg",
       quote: "The team's local market knowledge is exceptional. They helped us establish strong retailer partnerships across all major cities."
+    },
+    {
+      id: 7,
+      name: "Hira Foods",
+      company: "Food Products Company",
+      image: "/logos/HiraFoods.jpeg",
+      quote: "Faast Marketing has been a reliable distribution partner for Hira Foods. Their team gets our products onto shelves on time and keeps our retailers well supplied across the market."
     }
   ];
 

@@ -221,14 +221,14 @@ export default function About() {
             </div>
           </div>
 
-          {/* Board of Directors */}
+          {/* Zimmedar and Regional Sales Managers */}
           <div className="mb-20">
             <div className="text-center mb-12">
               <div className="inline-block mb-4">
                 <div className="w-16 h-1 bg-gradient-to-r from-red-600 to-yellow-500 mx-auto rounded-full"></div>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                Board of Directors
+                Zimmedar and Regional Sales Managers
               </h3>
               <p className="text-gray-600 text-lg">Regional leaders managing markets across Pakistan</p>
             </div>
