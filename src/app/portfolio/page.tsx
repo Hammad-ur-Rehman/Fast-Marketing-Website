@@ -270,6 +270,17 @@ export default function Portfolio() {
               />
             </div>
 
+            {/* Hira Foods */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-red-100 group">
+              <Image
+                src="/logos/HiraFoods.jpeg"
+                alt="Hira Foods Logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+
           </div>
         </div>
       </section>
