@@ -10,7 +10,7 @@ export default function Home() {
   const testimonials = [
     {
       id: 1,
-      name: "Lassani Foods",
+      name: "Lasani Foods",
       company: "Food Products Company",
       image: "/logos/Lasanifoods.webp",
       quote: "Fast Marketing helped us expand our distribution across Pakistan. Their local market expertise is unmatched. Sales increased by 300% in just 6 months!"
@@ -45,7 +45,7 @@ export default function Home() {
     },
     {
       id: 6,
-      name: "KFO Khan",
+      name: "KFP Khan",
       company: "Food Distribution",
       image: "/logos/KFOKhan.jpg",
       quote: "The team's local market knowledge is exceptional. They helped us establish strong retailer partnerships across all major cities."
@@ -75,15 +75,15 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fadeInLeft">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Fast Marketing
+                Faast Marketing
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">
                   Pakistan's Leading
                 </span>
-                <span className="block">Distribution Network</span>
+                <span className="block">Marketing Network</span>
               </h1>
               <p className="text-xl text-gray-600 mt-6 leading-relaxed">
                 We help businesses across Pakistan reach every corner of the market with our extensive 
-                local distribution network. From major cities to remote towns, we make your products 
+                distribution network. From major cities to remote towns, we make your products 
                 available everywhere through our strong retailer partnerships.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -117,7 +117,7 @@ export default function Home() {
                         <svg className="w-6 h-6 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                        Local Market Expertise
+                        Pakistan Wide Market Expertise
                       </li>
                       <li className="flex items-center text-gray-700">
                         <svg className="w-6 h-6 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
@@ -160,7 +160,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Local Market Distribution</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Pakistan Wide Market Distribution</h3>
               <p className="text-gray-600 mb-6">
                 Reach every corner of Pakistan with our extensive distribution network. 
                 We ensure your products are available in local markets, shops, and retail outlets.
@@ -233,7 +233,7 @@ export default function Home() {
               <div className="text-xl opacity-90">Products Marketed</div>
             </div>
             <div className="text-white">
-              <div className="text-4xl md:text-5xl font-bold mb-2">7+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">8+</div>
               <div className="text-xl opacity-90">Years Experience</div>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function Home() {
               <div 
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-              >
+                >
                 {testimonials.map((testimonial) => (
                   <div key={testimonial.id} className="w-full flex-shrink-0">
                     <div className="bg-white p-8 md:p-12 rounded-2xl shadow-lg mx-4">

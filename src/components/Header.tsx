@@ -17,14 +17,14 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <Image
-                src="./logos/FaastMarketinglogo.jpeg"
-                alt="Fast Marketing Logo"
-                width={680}
-                height={380}
-                className="h-24 sm:h-20 md:h-24 lg:h-28 w-auto"
-                priority
-              />
+             <Image
+  src="/logos/faast marketing gradient logo.jpeg"
+  alt="Faast Marketing Logo"
+  width={300}
+  height={100}
+  className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain"
+  priority
+/>
             </Link>
           </div>
 
@@ -53,6 +53,12 @@ export default function Header() {
               className="text-gray-700 hover:text-red-600 transition-colors duration-200 font-medium"
             >
               Portfolio
+            </Link>
+            <Link 
+              href="/export" 
+              className="text-gray-700 hover:text-red-600 transition-colors duration-200 font-medium"
+            >
+              Export
             </Link>
             <Link 
               href="/contact" 
@@ -120,6 +126,13 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Portfolio
+              </Link>
+              <Link 
+                href="/export" 
+                className="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Export
               </Link>
               <Link 
                 href="/contact" 

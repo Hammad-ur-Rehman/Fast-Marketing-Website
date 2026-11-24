@@ -7,19 +7,19 @@ export default function Portfolio() {
       id: 1,
       title: "Gulzar Foods Nimco Distribution",
       client: "Gulzar Foods Nimco",
-      category: "Local Distribution",
-      description: "Expanded Nimco distribution across 25+ cities in Pakistan, increasing sales by 300% in 6 months.",
-      results: ["300% sales increase", "25+ cities covered", "500+ new retailers", "6 months timeline"],
+      category: "Nationwide Distribution",
+      description: "Expanded Gulzar Foods’ Nimco product distribution across 25+ cities in Pakistan, increasing overall sales by 300% within six months through strategic distributor partnerships.",
+      results: ["300% sales growth", "25+ cities covered", "500+ new retailers", "6 months timeline"],
       image: "bg-gradient-to-br from-red-100 to-red-200",
       logo: "/logos/GulzarFoods.jpg"
     },
     {
       id: 2,
-      title: "Lassani Foods Market Expansion",
-      client: "Lassani Foods",
-      category: "Local Distribution",
-      description: "Comprehensive local market expansion strategy that increased market coverage by 400% and sales by 250%.",
-      results: ["400% market coverage increase", "250% sales growth", "50% cost reduction", "12 months campaign"],
+      title: "Lasani Foods Market Expansion",
+      client: "Lasani Foods",
+      category: "Regional Distribution",
+      description: "Developed and executed a regional expansion plan for Lasani Foods, enhancing distribution coverage by 400% and achieving 250% sales growth through new dealer networks.",
+      results: ["400% coverage increase", "250% sales growth", "50% cost optimization", "12 months campaign"],
       image: "bg-gradient-to-br from-yellow-100 to-yellow-200",
       logo: "/logos/Lasanifoods.webp"
     },
@@ -27,9 +27,9 @@ export default function Portfolio() {
       id: 3,
       title: "Al Jannat Foods Product Launch",
       client: "Al Jannat Foods",
-      category: "Brand Promotion",
-      description: "Successful product launch across multiple cities with strategic marketing and distribution planning.",
-      results: ["100% launch success", "15 cities covered", "200% target sales", "3 months campaign"],
+      category: "New Product Distribution",
+      description: "Managed the successful distribution launch of Al Jannat Foods products across multiple cities, achieving 200% of target sales within the first three months.",
+      results: ["200% target achievement", "15+ cities covered", "100% launch success", "3 months campaign"],
       image: "bg-gradient-to-br from-blue-100 to-blue-200",
       logo: "/logos/JannatFoods.jpg"
     },
@@ -37,9 +37,9 @@ export default function Portfolio() {
       id: 4,
       title: "Uptime Foods Regional Expansion",
       client: "Uptime Foods",
-      category: "Local Distribution",
-      description: "Regional market expansion that improved market penetration and increased distribution coverage by 350%.",
-      results: ["350% coverage increase", "Top 3 market positions", "200% sales growth", "8 months project"],
+      category: "Territory Development",
+      description: "Expanded Uptime Foods’ market presence across new territories, strengthening distributor relationships and increasing coverage by 350% with 200% sales growth.",
+      results: ["350% coverage increase", "Top 3 regional ranking", "200% sales growth", "8 months project"],
       image: "bg-gradient-to-br from-green-100 to-green-200",
       logo: "/logos/Uptimesnacks.jpg"
     },
@@ -47,23 +47,25 @@ export default function Portfolio() {
       id: 5,
       title: "ZKF Foods Market Penetration",
       client: "ZKF Foods",
-      category: "Local Distribution",
-      description: "Penetrated new markets with strategic distribution and marketing approach, achieving 150% growth.",
-      results: ["150% market growth", "30+ new markets", "400+ retail partners", "10 months project"],
+      category: "Distribution Network Growth",
+      description: "Strengthened ZKF Foods’ footprint by penetrating 30+ new markets across Pakistan, establishing over 400 retail partnerships and driving 150% growth in sales volume.",
+      results: ["150% sales growth", "30+ new markets", "400+ retail partners", "10 months campaign"],
       image: "bg-gradient-to-br from-purple-100 to-purple-200",
       logo: "/logos/ZKF Crunch.png"
     },
     {
       id: 6,
-      title: "Food Land Brand Building",
+      title: "Food Land Nationwide Distribution",
       client: "Food Land",
-      category: "Digital Marketing",
-      description: "Built strong social media presence and brand awareness through strategic content and engagement.",
-      results: ["500% follower growth", "80% engagement rate", "Brand recognition", "6 months campaign"],
+      category: "Nationwide Distribution",
+      description: "Expanded Food Land’s product distribution network nationwide, ensuring consistent product availability and boosting total sales by 500% through coordinated distributor efforts.",
+      results: ["500% sales growth", "Nationwide availability", "Strong distributor network", "6 months campaign"],
       image: "bg-gradient-to-br from-pink-100 to-pink-200",
       logo: "/logos/FoodLand.jpg"
     }
   ];
+
+
 
   const stats = [
     { number: "500+", label: "Projects Completed" },
@@ -75,120 +77,196 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-red-50 via-white to-yellow-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-red-50 via-white to-yellow-50 py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <div className="inline-block mb-6">
+              <div className="w-20 h-1 bg-gradient-to-r from-red-600 to-yellow-500 mx-auto rounded-full"></div>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Portfolio</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how we've helped businesses across Pakistan achieve remarkable growth through our marketing expertise
+            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+              Proven success stories from businesses across Pakistan. Ready to expand globally with world-class marketing solutions.
             </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
+              <div className="bg-white px-6 py-3 rounded-full shadow-lg border-2 border-red-100">
+                <span className="text-sm font-semibold text-gray-700">🇵🇰 Pakistan Market Leader</span>
+              </div>
+              <div className="bg-white px-6 py-3 rounded-full shadow-lg border-2 border-yellow-100">
+                <span className="text-sm font-semibold text-gray-700">🌍 Global Expansion Ready</span>
+              </div>
+              <div className="bg-white px-6 py-3 rounded-full shadow-lg border-2 border-red-100">
+                <span className="text-sm font-semibold text-gray-700">📈 300% Average Growth</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-red-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <section className="py-20 bg-gradient-to-r from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-white">
-                <div className="text-3xl md:text-4xl font-bold mb-2">{stat.number}</div>
-                <div className="text-lg opacity-90">{stat.label}</div>
+              <div key={index} className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-3">{stat.number}</div>
+                <div className="text-lg text-white opacity-95 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Client Logos Section */}
+      {/* Global Reach Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-3xl p-12 shadow-2xl border-2 border-blue-100">
+            <div className="text-center mb-12">
+              <div className="inline-block mb-4">
+                <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                Expanding <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Globally</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                With proven success in Pakistan, we're ready to help international businesses enter new markets and scale globally
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-blue-200">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl">🌍</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">International Ready</h3>
+                <p className="text-gray-600">
+                  Proven methodologies that work across borders. Ready to expand to Middle East, South Asia, and beyond.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-purple-200">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl">🚀</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Scalable Solutions</h3>
+                <p className="text-gray-600">
+                  Our distribution and marketing strategies are designed to scale from local to global markets seamlessly.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-indigo-200">
+                <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl">🤝</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Cross-Cultural Expertise</h3>
+                <p className="text-gray-600">
+                  Deep understanding of diverse markets. We adapt strategies to local cultures while maintaining global standards.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Logos Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Trusted Clients
+            <div className="inline-block mb-4">
+              <div className="w-16 h-1 bg-gradient-to-r from-red-600 to-yellow-500 mx-auto rounded-full"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Our Trusted <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Clients</span>
             </h2>
             <p className="text-xl text-gray-600">
-              We're proud to work with leading brands across Pakistan
+              Leading brands trust us with their marketing and distribution across Pakistan
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 items-center justify-items-center">
             {/* Gulzar Foods */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-red-100 group">
               <Image
-                src="./logos/GulzarFoods.jpg"
+                src="/logos/GulzarFoods.jpg"
                 alt="Gulzar Foods Logo"
                 width={200}
                 height={120}
-                className="w-full h-auto object-contain"
-              />
-            </div>
-
-            {/* Lassani Foods */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
-              <Image
-                src="./logos/JannatFoods.jpg"
-                alt="jannat logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
               />
             </div>
 
             {/* Jannat Foods */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-blue-100 group">
               <Image
-                src="./logos/Lasanifoods.webp"
-                alt="Uptime Snacks Logo"
+                src="/logos/JannatFoods.jpg"
+                alt="Jannat Foods Logo"
                 width={200}
                 height={120}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
               />
             </div>
 
-            {/* KFO Khan */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+            {/* Lasani Foods */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-yellow-100 group">
               <Image
-                src="./logos/KFOKhan.jpg"
-                alt="KFO Khan Logo"
+                src="/logos/Lasanifoods.webp"
+                alt="Lasani Foods Logo"
                 width={200}
                 height={120}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+
+            {/* KFP Khan */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-red-100 group">
+              <Image
+                src="/logos/KFOKhan.jpg"
+                alt="KFP Khan Logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
               />
             </div>
 
             {/* Uptime Snacks */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-green-100 group">
               <Image
                 src="/logos/Uptimesnacks.jpg"
-                alt="./logos/Uptime Snacks Logo"
+                alt="Uptime Snacks Logo"
                 width={200}
                 height={120}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
               />
             </div>
 
             {/* ZKF Crunch */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-purple-100 group">
               <Image
                 src="/logos/ZKF Crunch.png"
                 alt="ZKF Crunch Logo"
                 width={100}
                 height={120}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
               />
             </div>
 
             {/* Food Land */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-[200px]">
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-pink-100 group">
               <Image
-                src="./logos/FoodLand.jpg"
+                src="/logos/FoodLand.jpg"
                 alt="Food Land Logo"
                 width={200}
                 height={120}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-gray-200 group">
+              <Image
+                src="/logos/HM Food.jpeg"
+                alt="HM Food Logo"
+                width={200}
+                height={120}
+                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
               />
             </div>
 
@@ -197,47 +275,51 @@ export default function Portfolio() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Success Stories
+            <div className="inline-block mb-4">
+              <div className="w-16 h-1 bg-gradient-to-r from-red-600 to-yellow-500 mx-auto rounded-full"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Success <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Stories</span>
             </h2>
             <p className="text-xl text-gray-600">
-              Real results from real clients across Pakistan
+              Real results from real clients. Proven methodologies ready for global expansion.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((study) => (
-              <div key={study.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-white flex items-center justify-center p-6 border-b border-gray-100">
-                  <div className="rounded-lg p-4 w-full h-full flex items-center justify-center">
+              <div key={study.id} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-red-100 group">
+                <div className="h-52 bg-gradient-to-br from-gray-50 to-white flex items-center justify-center p-6 border-b border-gray-100 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-50/50 to-yellow-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="rounded-lg p-4 w-full h-full flex items-center justify-center relative z-10">
                     <Image
                       src={study.logo}
                       alt={`${study.client} Logo`}
                       width={160}
                       height={100}
-                      className="w-32 h-auto object-contain max-h-32"
+                      className="w-32 h-auto object-contain max-h-32 group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-sm font-semibold text-red-600 bg-red-100 px-3 py-1 rounded-full">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-bold text-white bg-gradient-to-r from-red-600 to-yellow-500 px-4 py-1.5 rounded-full">
                       {study.category}
                     </span>
-                    <span className="text-sm text-gray-500">{study.client}</span>
+                    <span className="text-sm text-gray-500 font-medium">{study.client}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{study.title}</h3>
-                  <p className="text-gray-600 mb-4">{study.description}</p>
-                  <div className="space-y-2">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors">{study.title}</h3>
+                  <p className="text-gray-600 mb-5 leading-relaxed">{study.description}</p>
+                  <div className="space-y-2.5">
                     {study.results.map((result, index) => (
-                      <div key={index} className="flex items-center text-sm text-gray-600">
-                        <svg className="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <div key={index} className="flex items-center text-sm text-gray-700 bg-gray-50 px-3 py-2 rounded-lg">
+                        <svg className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                        {result}
+                        <span className="font-medium">{result}</span>
                       </div>
                     ))}
                   </div>
@@ -249,23 +331,26 @@ export default function Portfolio() {
       </section>
 
       {/* Client Testimonials */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What Our Clients Say
+            <div className="inline-block mb-4">
+              <div className="w-16 h-1 bg-gradient-to-r from-red-600 to-yellow-500 mx-auto rounded-full"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              What Our Clients <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Say</span>
             </h2>
             <p className="text-xl text-gray-600">
-              Testimonials from our satisfied clients
+              Trusted by leading brands. Ready to serve international markets.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-red-100">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
                   <Image
-                    src="/Logos/GulzarFoods.jpg"
+                    src="/logos/GulzarFoods.jpg"
                     alt="Gulzar Foods Logo"
                     width={48}
                     height={48}
@@ -290,23 +375,23 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-yellow-100">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
+                <div className="w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center shadow-md">
                   <Image
                     src="/logos/Lasanifoods.webp"
-                    alt="Lassani Foods Logo"
+                    alt="Lasani Foods Logo"
                     width={54}
                     height={60}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-semibold text-gray-900">Lassani Foods</h4>
+                  <h4 className="font-bold text-gray-900 text-lg">Lasani Foods</h4>
                   <p className="text-gray-600 text-sm">Food Products Company</p>
                 </div>
               </div>
-              <p className="text-gray-600 italic mb-4">
+              <p className="text-gray-600 italic mb-6 leading-relaxed text-base">
                 "Their digital marketing strategies are phenomenal. We saw a 400% increase in online engagement 
                 and 250% more leads. The ROI has been incredible."
               </p>
@@ -319,11 +404,11 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-blue-100">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
                   <Image
-                    src="/Logos/JannatFoods.jpg"
+                    src="/logos/JannatFoods.jpg"
                     alt="Jannat Foods Logo"
                     width={48}
                     height={48}
@@ -383,24 +468,28 @@ export default function Portfolio() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-yellow-500">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+      <section className="py-20 bg-gradient-to-br from-red-600 via-red-700 to-yellow-500 relative overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-10"></div>
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="inline-block mb-6">
+            <div className="w-16 h-1 bg-white mx-auto rounded-full"></div>
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Ready to Be Our Next Success Story?
           </h2>
-          <p className="text-xl text-white opacity-90 mb-8">
-            Let's discuss how we can help your business achieve similar results
+          <p className="text-xl md:text-2xl text-white opacity-95 mb-10 leading-relaxed">
+            Whether you're in Pakistan or planning international expansion, let's discuss how we can help your business achieve remarkable growth
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/contact" 
-              className="bg-white text-red-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg"
+              className="bg-white text-red-600 px-10 py-4 rounded-xl text-lg font-bold hover:bg-gray-100 transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-105 transform"
             >
               Start Your Project
             </Link>
             <Link 
               href="/services" 
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-red-600 transition-all duration-200"
+              className="border-2 border-white text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-white hover:text-red-600 transition-all duration-300 shadow-xl"
             >
               View Our Services
             </Link>

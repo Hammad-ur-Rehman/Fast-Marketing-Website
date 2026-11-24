@@ -8,7 +8,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Fast Marketing</span>
+              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Faast Marketing</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Your trusted partner in marketing excellence across Pakistan
@@ -26,14 +26,14 @@ export default function About() {
                 Our Story
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Fast Marketing was founded in 2017 with a simple yet powerful vision: to help businesses 
+                Faast Marketing was founded in 2017 with a simple yet powerful vision: to help businesses 
                 across Pakistan reach their full potential through innovative marketing solutions. 
                 What started as a small team with big dreams has grown into one of Pakistan's 
                 leading marketing agencies.
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 Over the years, we've built an extensive network of distributors, retailers, 
-                and marketing professionals who share our commitment to excellence. From local 
+                and marketing professionals who share our commitment to excellence. From 
                 market distribution to cutting-edge digital marketing, we've helped hundreds 
                 of businesses grow and succeed across Pakistan.
               </p>
@@ -72,7 +72,7 @@ export default function About() {
                   <div className="text-gray-600">Products Marketed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-600 mb-2">7+</div>
+                  <div className="text-3xl font-bold text-yellow-600 mb-2">8+</div>
                   <div className="text-gray-600">Years Experience</div>
                 </div>
               </div>
@@ -193,60 +193,177 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-              <div className="w-24 h-24 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">HMK</span>
+          {/* Head Office Team */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <div className="inline-block mb-4">
+                <div className="w-16 h-1 bg-gradient-to-r from-red-600 to-yellow-500 mx-auto rounded-full"></div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Haseeb Muzammil Khan</h3>
-              <p className="text-red-600 font-semibold mb-3">CEO</p>
-              <p className="text-gray-600">
-              With over 30 years of experience in marketing, Haseeb leads our team with vision and passion.
-              </p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                Head Office Team
+              </h3>
+              <p className="text-gray-600 text-lg">Our leadership team driving excellence</p>
             </div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-              <div className="w-24 h-24 bg-gradient-to-r from-yellow-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">M</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Muhammad</h3>
-              <p className="text-red-600 font-semibold mb-3">Balochistan Local Market Manager</p>
-              <p className="text-gray-600">
-              Mohabbat Khan covers Balochistan local market with extensive knowledge of the region.
-              </p>
+            <div className="flex justify-center">
+              <Link href="/about/head-office" className="bg-white p-8 rounded-3xl shadow-xl text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group max-w-sm w-full border-2 border-transparent hover:border-red-100">
+                <div className="w-28 h-28 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <span className="text-white font-bold text-2xl">HMK</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Haseeb Muzammil Khan</h3>
+                <p className="text-red-600 font-semibold mb-3 text-lg">CEO</p>
+                <p className="text-gray-600 mb-4">
+                  With over 30 years of experience in marketing, Haseeb leads our team with vision and passion.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
             </div>
+          </div>
 
-            <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-              <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">I</span>
+          {/* Board of Directors */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <div className="inline-block mb-4">
+                <div className="w-16 h-1 bg-gradient-to-r from-red-600 to-yellow-500 mx-auto rounded-full"></div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Imran</h3>
-              <p className="text-red-600 font-semibold mb-3">Hyderabad Local Market Manager</p>
-              <p className="text-gray-600">
-              Imran manages the Hyderabad local market, ensuring comprehensive regional coverage.
-              </p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                Board of Directors
+              </h3>
+              <p className="text-gray-600 text-lg">Regional leaders managing markets across Pakistan</p>
             </div>
+          </div>
 
-            <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-              <div className="w-24 h-24 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">A</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Aslam</h3>
-              <p className="text-red-600 font-semibold mb-3">Mirpur Khas Market Manager</p>
-              <p className="text-gray-600">
-                Aslam covers Mirpur Khas local market with deep understanding of the area.
-              </p>
-            </div>
+          {/* Regional Market Managers */}
+          <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+            <Link href="/about/orangi-town" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-purple-100">
+                <div className="w-24 h-24 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <span className="text-white font-bold text-2xl">A</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Syed Adil Ali</h3>
+                <p className="text-red-600 font-semibold mb-3">Orangi Town Karachi Market Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Adil covers Orangi town market, ensuring strong presence in the Orangi town area.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
 
-            <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-              <div className="w-24 h-24 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">A</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Adil</h3>
-              <p className="text-red-600 font-semibold mb-3">Orangi Town Karachi Market Manager</p>
-              <p className="text-gray-600">
-                Adil covers Orangi town local market, ensuring strong presence in the orangi town.
-              </p>
+   
+              <Link href="/about/korangi" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-orange-100">
+                <div className="w-24 h-24 bg-gradient-to-r from-orange-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <span className="text-white font-bold text-2xl">I</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Irfan</h3>
+                <p className="text-red-600 font-semibold mb-3">Korangi Market Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Irfan manages the Korangi market, ensuring comprehensive regional coverage and strong market presence.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
+
+              <Link href="/about/old-area" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-cyan-100">
+                <div className="w-24 h-24 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <span className="text-white font-bold text-2xl">T</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Tahir Malik</h3>
+                <p className="text-red-600 font-semibold mb-3">Old Area Market Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Tahir covers Old Area market with extensive knowledge and understanding of the region.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
+
+            <Link href="/about/balochistan" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-yellow-100">
+                  <div className="w-24 h-24 bg-gradient-to-r from-yellow-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                    <span className="text-white font-bold text-2xl">M</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Mohabbat Khan</h3>
+                  <p className="text-red-600 font-semibold mb-3">Balochistan Market Manager</p>
+                  <p className="text-gray-600 mb-4">
+                    Mohabbat Khan covers Balochistan market with extensive knowledge of the region.
+                  </p>
+                  <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                    View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </p>
+                </Link>
+              
+              
+              <Link href="/about/hyderabad" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-blue-100">
+                <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <span className="text-white font-bold text-2xl">I</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Imran Sheikh</h3>
+                <p className="text-red-600 font-semibold mb-3">Sindh Market Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Imran manages the Hyderabad market, ensuring comprehensive regional coverage.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
+
+              <Link href="/about/mirpur-khas" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-green-100">
+                <div className="w-24 h-24 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <span className="text-white font-bold text-2xl">A</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">M Aslam Malak</h3>
+                <p className="text-red-600 font-semibold mb-3">Mirpur Khas Market Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Aslam covers Mirpur Khas market with deep understanding of the area.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
+
+              <Link href="/about/central" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-emerald-100">
+                <div className="w-24 h-24 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <span className="text-white font-bold text-2xl">S</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Late Faisal Sheikh</h3>
+                <p className="text-red-600 font-semibold mb-3">Central Market Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Safdar covers Central market, ensuring strong presence in the central area.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
+
+              <Link href="/about/punjab-rsm" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-red-100">
+                <div className="w-24 h-24 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <span className="text-white font-bold text-2xl">P</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Punjab RSM</h3>
+                <p className="text-red-600 font-semibold mb-3">Punjab Regional Sales Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Leading the Punjab region with strategic vision and extensive market knowledge across multiple cities.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
+
+              <Link href="/about/kpk-rsm" className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 cursor-pointer group border-2 border-transparent hover:border-green-100">
+                <div className="w-24 h-24 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                  <span className="text-white font-bold text-2xl">K</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">KPK RSM</h3>
+                <p className="text-red-600 font-semibold mb-3">KPK Regional Sales Manager</p>
+                <p className="text-gray-600 mb-4">
+                  Leading the Khyber Pakhtunkhwa region with strategic vision and comprehensive market coverage.
+                </p>
+                <p className="text-red-600 text-sm mt-4 font-medium group-hover:underline flex items-center justify-center gap-2">
+                  View Team Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </p>
+              </Link>
             </div>
           </div>
         </div>

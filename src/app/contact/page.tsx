@@ -232,8 +232,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+92 300 123 4567</p>
-                    <p className="text-gray-600">+92 21 123 4567</p>
+                    <a href="tel:+922133399526" className="text-gray-600 hover:text-red-600 transition-colors">
+                      +92-21-33399526
+                    </a>
+                    <p className="text-sm text-gray-500 mt-1">021-33399526 (Local)</p>
                   </div>
                 </div>
 
@@ -245,8 +247,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">info@fastmarketing.pk</p>
-                    <p className="text-gray-600">support@fastmarketing.pk</p>
+                    <p className="text-gray-600">Faastmarketing906@gmail.com</p>
                   </div>
                 </div>
 

@@ -10,14 +10,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Fast Marketing - Local Market Distribution & Digital Marketing Pakistan",
-  description: "Leading marketing agency in Pakistan providing local market distribution, digital marketing, and brand promotion services. Reach your target audience effectively across Pakistan.",
-  keywords: "marketing agency Pakistan, local market distribution, digital marketing, brand promotion, product marketing, Pakistan marketing services",
+  title: "Fast Marketing - Market Distribution & Digital Marketing Pakistan",
+  description: "Leading marketing agency in Pakistan providing market distribution, digital marketing, and brand promotion services. Reach your target audience effectively across Pakistan.",
+  keywords: "marketing agency Pakistan, market distribution, digital marketing, brand promotion, product marketing, Pakistan marketing services",
   authors: [{ name: "Fast Marketing" }],
   openGraph: {
-    title: "Fast Marketing - Local Market Distribution & Digital Marketing Pakistan",
-    description: "Leading marketing agency in Pakistan providing local market distribution, digital marketing, and brand promotion services.",
-    type: "website",
+    title: "Fast Marketing - Market Distribution & Digital Marketing Pakistan",
+    description: "Leading marketing agency in Pakistan providing market distribution, digital marketing, and brand promotion services.",
     locale: "en_PK",
   },
 };

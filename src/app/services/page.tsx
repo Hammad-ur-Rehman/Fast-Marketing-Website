@@ -1,6 +1,34 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Services() {
+  const [hoveredCity, setHoveredCity] = useState<string | null>(null);
+  const [selectedCity, setSelectedCity] = useState('Karachi');
+
+  const cities = [
+    { name: 'Karachi', x: 308, y: 581, description: 'Orangi Town, Korangi, Saddar', region: 'Sindh' },
+    { name: 'Hyderabad', x: 308, y: 536, description: 'Main market distribution hub', region: 'Sindh' },
+    { name: 'Mirpur Khas', x: 393, y: 453, description: 'Retail and wholesale supply', region: 'Sindh' },
+    { name: 'Sukkur', x: 332, y: 462, description: 'North Sindh delivery center', region: 'Sindh' },
+    { name: 'Larkana', x: 296, y: 435, description: 'Regional distributor network', region: 'Sindh' },
+    { name: 'Quetta', x: 256, y: 366, description: 'Balochistan core operations', region: 'Balochistan' },
+    { name: 'Gwadar', x: 82, y: 502, description: 'Coastal market access', region: 'Balochistan' },
+    { name: 'Khuzdar', x: 170, y: 390, description: 'Southwest route support', region: 'Balochistan' },
+    { name: 'Lahore', x: 516, y: 248, description: 'Central Punjab growth market', region: 'Punjab' },
+    { name: 'Multan', x: 430, y: 301, description: 'South Punjab service zone', region: 'Punjab' },
+    { name: 'Faisalabad', x: 491, y: 236, description: 'Industrial retail channel', region: 'Punjab' },
+    { name: 'Sahiwal', x: 460, y: 271, description: 'Local trade activation', region: 'Punjab' },
+    { name: 'Bahawalpur', x: 455, y: 336, description: 'Coverage for nearby towns', region: 'Punjab' },
+    { name: 'Rawalpindi', x: 472, y: 181, description: 'North Punjab logistics point', region: 'Punjab' },
+    { name: 'Islamabad', x: 479, y: 169, description: 'Federal territory operations', region: 'ICT' },
+    { name: 'Peshawar', x: 406, y: 170, description: 'KPK metro retail network', region: 'KPK' },
+    { name: 'Mardan', x: 422, y: 177, description: 'Fast delivery for KPK belts', region: 'KPK' },
+    { name: 'DI Khan', x: 342, y: 251, description: 'Southern KPK route link', region: 'KPK' },
+  ];
+  const activeCity = cities.find((city) => city.name === (hoveredCity ?? selectedCity)) ?? cities[0];
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -17,6 +45,169 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Pakistan Map Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4">
+              <div className="w-16 h-1 bg-gradient-to-r from-red-600 to-yellow-500 mx-auto rounded-full"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Presence</span> Across Pakistan
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Faast Marketing has established a strong presence in major cities and regions across Pakistan, ensuring comprehensive market coverage
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-50 via-white to-red-50/30 rounded-3xl shadow-2xl p-6 md:p-10 border-2 border-gray-100">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+              <div className="xl:col-span-2 rounded-2xl border border-gray-200 bg-white p-4 md:p-6 shadow-inner">
+            <div className="relative w-full rounded-xl overflow-hidden bg-gradient-to-br from-slate-50 to-red-50/40" style={{ paddingBottom: '66%' }}>
+            <svg viewBox="0 0 825 600" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="mapGlow" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stopColor="#fee2e2" />
+      <stop offset="100%" stopColor="#ffffff" />
+    </radialGradient>
+
+    <filter id="markerGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" floodColor="#ef4444" floodOpacity="0.6" />
+    </filter>
+  </defs>
+
+  {/* Background */}
+  <rect x="0" y="0" width="825" height="600" fill="url(#mapGlow)" />
+
+  {/* Real Pakistan map shape */}
+  <image
+    href="/pakistan-map.svg"
+    x="0"
+    y="0"
+    width="825"
+    height="600"
+    preserveAspectRatio="xMidYMid meet"
+  />
+
+  {/* City Markers */}
+  {cities.map((city) => {
+    const isActive = hoveredCity === city.name || selectedCity === city.name;
+    const size = isActive ? 13 : 10;
+    const labelOffset = city.name === 'Karachi' ? size + 6 : size + 12;
+
+    return (
+      <g
+        key={city.name}
+        className="cursor-pointer transition-all duration-300"
+        onMouseEnter={() => setHoveredCity(city.name)}
+        onMouseLeave={() => setHoveredCity(null)}
+        onClick={() => setSelectedCity(city.name)}
+      >
+        {/* Glow ring */}
+        <circle
+          cx={city.x}
+          cy={city.y}
+          r={size + 6}
+          fill="#ef4444"
+          opacity={isActive ? 0.25 : 0.08}
+          className="transition-all duration-300"
+        />
+
+        {/* Outer ring */}
+        <circle
+          cx={city.x}
+          cy={city.y}
+          r={size + 2}
+          fill="#fff"
+          filter="url(#markerGlow)"
+        />
+
+        {/* Main dot */}
+        <circle
+          cx={city.x}
+          cy={city.y}
+          r={size}
+          fill="#ef4444"
+          className="transition-all duration-300"
+        />
+
+        {/* City Name */}
+        <text
+          x={city.x}
+          y={city.y - labelOffset}
+          textAnchor="middle"
+          className="font-semibold fill-gray-800"
+          style={{ fontSize: isActive ? '15px' : '13px' }}
+        >
+          {city.name}
+        </text>
+
+      </g>
+    );
+  })}
+</svg>
+            </div>
+              </div>
+
+              <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+                <p className="text-sm font-semibold text-red-600 mb-2">Selected Coverage City</p>
+                <h3 className="text-2xl font-bold text-gray-900">{activeCity.name}</h3>
+                <p className="text-sm text-gray-500 mt-1">{activeCity.region}</p>
+                <p className="text-gray-700 mt-4 leading-relaxed">{activeCity.description}</p>
+                <div className="mt-5 space-y-2 text-sm text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2.5 w-2.5 rounded-full bg-red-500"></span>
+                    <span>Active distributor nodes</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
+                    <span>Fast local delivery routes</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="h-2.5 w-2.5 rounded-full bg-green-500"></span>
+                    <span>Retail engagement teams</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              {cities.map((city) => (
+                <button
+                  key={city.name}
+                  type="button"
+                  onMouseEnter={() => setHoveredCity(city.name)}
+                  onMouseLeave={() => setHoveredCity(null)}
+                  onClick={() => setSelectedCity(city.name)}
+                  className={`px-3 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${
+                    selectedCity === city.name
+                      ? 'bg-red-600 text-white border-red-600 shadow-md'
+                      : 'bg-white text-gray-700 border-gray-200 hover:border-red-300 hover:text-red-600'
+                  }`}
+                >
+                  {city.name}
+                </button>
+              ))}
+            </div>
+
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center p-6 bg-gradient-to-br from-red-50 to-transparent rounded-xl">
+                <div className="text-4xl font-bold text-red-600 mb-2">50+</div>
+                <div className="text-gray-700 font-medium">Cities Covered</div>
+              </div>
+              <div className="text-center p-6 bg-gradient-to-br from-yellow-50 to-transparent rounded-xl">
+                <div className="text-4xl font-bold text-yellow-600 mb-2">1000+</div>
+                <div className="text-gray-700 font-medium">Active Distributors</div>
+              </div>
+              <div className="text-center p-6 bg-gradient-to-br from-red-50 to-transparent rounded-xl">
+                <div className="text-4xl font-bold text-red-600 mb-2">5000+</div>
+                <div className="text-gray-700 font-medium">Retail Outlets</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Services */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
@@ -28,7 +219,7 @@ export default function Services() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">Local Market Distribution</h2>
+                <h2 className="text-3xl font-bold text-gray-900">Pakistan Wide Market Distribution</h2>
               </div>
               <p className="text-gray-600 mb-6 text-lg">
                 Our extensive distribution network covers all major cities and towns across Pakistan. 
