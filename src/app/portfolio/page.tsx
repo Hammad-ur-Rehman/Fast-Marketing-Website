@@ -76,7 +76,7 @@ export default function Portfolio() {
     { name: "ZKF Crunch", src: "/logos/ZKF Crunch.png", width: 100, height: 120, hoverBorder: "hover:border-purple-100" },
     { name: "Food Land", src: "/logos/FoodLand.jpg", width: 200, height: 120, hoverBorder: "hover:border-pink-100" },
     { name: "HM Food", src: "/logos/HM Food.jpeg", width: 200, height: 120, hoverBorder: "hover:border-gray-200" },
-    { name: "Hira Foods", src: "/logos/HiraFoods.jpeg", width: 200, height: 120, hoverBorder: "hover:border-red-100" },
+    { name: "Hira Foods", src: "/logos/HiraFoods-v2.jpeg", width: 200, height: 120, hoverBorder: "hover:border-red-100" },
   ];
 
   const stats = [

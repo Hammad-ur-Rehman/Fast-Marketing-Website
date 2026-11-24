@@ -54,7 +54,7 @@ export default function Home() {
       id: 7,
       name: "Hira Foods",
       company: "Food Products Company",
-      image: "/logos/HiraFoods.jpeg",
+      image: "/logos/HiraFoods-v2.jpeg",
       quote: "Faast Marketing has been a reliable distribution partner for Hira Foods. Their team gets our products onto shelves on time and keeps our retailers well supplied across the market."
     }
   ];
