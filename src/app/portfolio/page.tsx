@@ -67,6 +67,18 @@ export default function Portfolio() {
 
 
 
+  const clientLogos = [
+    { name: "Gulzar Foods", src: "/logos/GulzarFoods.jpg", width: 200, height: 120, hoverBorder: "hover:border-red-100" },
+    { name: "Jannat Foods", src: "/logos/JannatFoods.jpg", width: 200, height: 120, hoverBorder: "hover:border-blue-100" },
+    { name: "Lasani Foods", src: "/logos/Lasanifoods.webp", width: 200, height: 120, hoverBorder: "hover:border-yellow-100" },
+    { name: "KFP Khan", src: "/logos/KFOKhan.jpg", width: 200, height: 120, hoverBorder: "hover:border-red-100" },
+    { name: "Uptime Snacks", src: "/logos/Uptimesnacks.jpg", width: 200, height: 120, hoverBorder: "hover:border-green-100" },
+    { name: "ZKF Crunch", src: "/logos/ZKF Crunch.png", width: 100, height: 120, hoverBorder: "hover:border-purple-100" },
+    { name: "Food Land", src: "/logos/FoodLand.jpg", width: 200, height: 120, hoverBorder: "hover:border-pink-100" },
+    { name: "HM Food", src: "/logos/HM Food.jpeg", width: 200, height: 120, hoverBorder: "hover:border-gray-200" },
+    { name: "Hira Foods", src: "/logos/HiraFoods.jpeg", width: 200, height: 120, hoverBorder: "hover:border-red-100" },
+  ];
+
   const stats = [
     { number: "500+", label: "Projects Completed" },
     { number: "300%", label: "Average Growth" },
@@ -183,104 +195,23 @@ export default function Portfolio() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 items-center justify-items-center">
-            {/* Gulzar Foods */}
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-red-100 group">
-              <Image
-                src="/logos/GulzarFoods.jpg"
-                alt="Gulzar Foods Logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-
-            {/* Jannat Foods */}
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-blue-100 group">
-              <Image
-                src="/logos/JannatFoods.jpg"
-                alt="Jannat Foods Logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-
-            {/* Lasani Foods */}
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-yellow-100 group">
-              <Image
-                src="/logos/Lasanifoods.webp"
-                alt="Lasani Foods Logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-
-            {/* KFP Khan */}
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-red-100 group">
-              <Image
-                src="/logos/KFOKhan.jpg"
-                alt="KFP Khan Logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-
-            {/* Uptime Snacks */}
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-green-100 group">
-              <Image
-                src="/logos/Uptimesnacks.jpg"
-                alt="Uptime Snacks Logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-
-            {/* ZKF Crunch */}
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-purple-100 group">
-              <Image
-                src="/logos/ZKF Crunch.png"
-                alt="ZKF Crunch Logo"
-                width={100}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-
-            {/* Food Land */}
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-pink-100 group">
-              <Image
-                src="/logos/FoodLand.jpg"
-                alt="Food Land Logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-gray-200 group">
-              <Image
-                src="/logos/HM Food.jpeg"
-                alt="HM Food Logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-
-            {/* Hira Foods */}
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] border-2 border-transparent hover:border-red-100 group">
-              <Image
-                src="/logos/HiraFoods.jpeg"
-                alt="Hira Foods Logo"
-                width={200}
-                height={120}
-                className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-
+          <div className="flex flex-wrap justify-center gap-6">
+            {clientLogos.map((logo) => (
+              <div
+                key={logo.name}
+                className="w-[calc(50%_-_0.75rem)] md:w-[calc(33.333%_-_1rem)] lg:w-[calc(25%_-_1.125rem)] flex justify-center"
+              >
+                <div className={`bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-[200px] h-40 flex items-center justify-center border-2 border-transparent ${logo.hoverBorder} group`}>
+                  <Image
+                    src={logo.src}
+                    alt={`${logo.name} Logo`}
+                    width={logo.width}
+                    height={logo.height}
+                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
